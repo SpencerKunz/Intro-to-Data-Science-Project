@@ -1,0 +1,7 @@
+Q: Is the distribution of the number of entries statistically different between rain and non rainy days?
+A: Yes
+
+Q: Describe your results and the methods used
+A: Because of the difference in the number or entries for rainy days and non-rainy days, I used a two 
+tailed test to find P-critical. With P being so low at .025, p-critical (2*P) was larger by far. This means 
+that we can easily reject the null hypothesis

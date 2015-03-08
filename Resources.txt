@@ -1,0 +1,17 @@
+Web based resources:
+https://docs.python.org
+stackoverflow.com
+https://docs.google.com/document/d/1S4Gk42ZPBKAUZh7IPbqyzq_vk18oCvcniVcA4byBXCE/pub
+https://dev.mysql.com/doc/refman/5.1/en/counting-rows.html
+http://pandas.pydata.org/pandas-docs/stable/visualization.html#histograms
+http://discussions.udacity.com/t/ggplot-taking-forever-to-display-histogram-plot/3938
+http://discussions.udacity.com/t/mann-whitney-interpretation-assistance/4248/3
+Gradient Descent in Python Quiz in Lesson 3
+http://discussions.udacity.com/t/ps4-data-visualization/8228
+https://www.dropbox.com/s/meyki2wl9xfa7yk/turnstile_data_master_with_weather.csv
+http://discussions.udacity.com/t/ps-5-2-ridership-by-weather/8386
+Mapper and Reducer wih Aadhaar Data Quiz in Lesson 5
+
+Books:
+AP Statistics Crash Course by Michael D'Alessio
+Statistics for Dummies by Deborah J. Rumsey

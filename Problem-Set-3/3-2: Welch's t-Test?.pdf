@@ -1,0 +1,8 @@
+Q: Does entries data from the previous exercise seem normally distributed? 
+A: No
+
+Can we run Welch's T test on entries data? Why or why not?
+A: Yes, we can run Welch's T test on entries data. It does not assume 
+that the sample sizes are equal or that they have the same variance. This 
+test can see the probability of obtaining a good test statistic before we look 
+to prove if the hypothesis could be true.

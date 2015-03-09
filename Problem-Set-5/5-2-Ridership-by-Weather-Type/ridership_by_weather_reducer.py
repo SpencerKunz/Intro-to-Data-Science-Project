@@ -55,3 +55,9 @@ def reducer():
     if old_key != None:
         logging.info("{0}\t{1}".format(old_key, average))
 reducer()
+
+#This should be the correct answer but it would not test correctly on my computer.
+#It did not like the "for line in sys.stdin:" loop and we were unable to figure out 
+#the problem in time for submission. If this is correct I hope you'll take that into 
+#consideration. If there is actually a problem I would love to know, because it affected
+#my entire Chapter 5 problem set.

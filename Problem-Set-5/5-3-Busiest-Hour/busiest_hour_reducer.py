@@ -45,21 +45,26 @@ def reducer():
     datetime = ''
 
     for line in sys.stdin:
-        # your code here
-        data = line.strip().split("\t")
+    # your code here
+        data = line.strip().split('\t')
         if len(data) != 4:
             continue
-        this_key, entries, date, time = data
+
+        this_key = data[0]
+        count = float(data[1])
+
         if old_key and old_key != this_key:
             logging.info("{0}\t{1}\t{2}".format(old_key, datetime, max_entries))
+            print "{0}\t{1}\t{2}".format(old_key, datetime, max_entries)
             max_entries = 0
-        else:
-            old_key = this_key
-            if float(entries) >= max_entries:
-                max_entries += float(entries)
-                datetime = date + ' ' + time
+        old_key = this_key
+        if count >= max_entries:
+            max_entries = count
+            datetime = data[2] + ' ' + data[3]
+
     if old_key != None:
         logging.info("{0}\t{1}\t{2}".format(old_key, datetime, max_entries))
+        print "{0}\t{1}\t{2}".format(old_key, datetime, max_entries)
 reducer()
 
 #This should be the correct answer but it would not test correctly on my computer.

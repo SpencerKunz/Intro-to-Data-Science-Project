@@ -34,5 +34,6 @@ def mapper():
         if len(data) != 22 or data[1] == 'UNIT':
             continue 
         logging.info("{0}\t{1}\t{2}\t{3}".format(data[1], data[6], data[2], data[3]))
+        print "{0}\t{1}\t{2}\t{3}".format(data[1], data[6], data[2], data[3])
         
 mapper()

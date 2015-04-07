@@ -24,27 +24,23 @@ def reducer():
     So logging.info("my message") will work, but logging.info("my","message") will not.
     '''
 
+    old_key=None
     generated = 0
-    old_key = None
-    
     for line in sys.stdin:
         # your code here
         data = line.strip().split("\t")
-        if len(data)!=2:
+        if len(data) !=2:
             continue
         this_key, count = data
         if old_key and old_key != this_key:
             logging.info("{0}\t{1}".format(old_key, generated))
+            print"{0}\t{1}".format(old_key, generated)
             generated = 0
+            
         old_key = this_key
         generated += float(count)
     if old_key != None:
         logging.info("{0}\t{1}".format(old_key, generated))
-                        
+        print"{0}\t{1}".format(old_key, generated)
 reducer()
 
-#This should be the correct answer but it would not test correctly on my computer.
-#It did not like the "for line in sys.stdin:" loop and we were unable to figure out 
-#the problem in time for submission. If this is correct I hope you'll take that into 
-#consideration. If there is actually a problem I would love to know, because it affected
-#my entire Chapter 5 problem set.

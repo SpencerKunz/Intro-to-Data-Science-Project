@@ -51,5 +51,5 @@ def mapper():
         data = line.strip().split(',')
         if len(data) != 22 or data[1] == 'UNIT':
             continue 
-        logging.info("{0}\t{1}".format(format_key(float(data[14]),float(data[15])), data[6]))
+        print"{0}\t{1}".format(format_key(float(data[14]),float(data[15])), data[6])
 mapper()
